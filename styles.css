@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(37, 34, 34);
+    font-family: sans-serif;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+#Content {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+input {
+    width: 540px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.753);
+    margin-bottom: 30px;
+    background-color:rgb(36, 33, 33);
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 15px;
+}
+
+button {
+    width: 140px;
+    padding: 8px 0;
+
+    margin-right: 10px;
+    background-color: rgb(46, 43, 43);
+    color: rgba(255, 255, 255, 0.925);
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    
+}
+
+span {
+    color: rgb(79, 105, 255);
+    position: absolute;
+    top: 140px;
+    right: 520px;
+}
