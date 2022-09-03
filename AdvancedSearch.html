@@ -8,24 +8,119 @@
 </head>
 
     <style>
+
+       input[type=submit] {
+        background-color: #4A8CF6;
+        width: 130px;
+        color: white;
+        margin-top: 30px;
+        margin-left: 640px;
+
+        font-size: 12px;
+        padding: 8px 0;
+        text-align:  center;
+        border: 0;
+       } 
+
+
+        .Alienation {
+            margin-left: 35px;
+        }
+
         body {
             background-color: rgb(37, 34, 34);
+            font-family: sans-serif;
+        }
+
+        nav {
+            position: absolute;
+            right: 0;
+            top: 0;
         }
 
         h1 {
-            margin-top: 60px;
-            color: rgb(224, 95, 95);
-            font-size: 25px;
+            margin-top: 90px;
+            color: rgb(240, 133, 133);
+            font-size: 20px;
+            font-weight: lighter;            
+        }
+
+        h1::after {
+            content: '';
+            height: 1px;
+            width: 100%;
+            background-color: rgb(59, 57, 57);
+            position: absolute;
+            top: 135px;
+            left: 0;
+
+        }
+
+        
+
+        #Labels, #Inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+        }
+
+        #Labels {
+            margin-top: 25px;
+            gap: 30px;
+            font-size: 12px;
+        }
+
+        #Inputs {
+            position: absolute;
+            left: 180px;
+            top: 220px;
+        }
+
+
+        input {
+            width: 580px;
+            background-color: transparent;
+            border: 1px solid gray;
+            padding: 5px;
+        }
+
+
+        p {
+            margin-top: 75px;
+            color: white;
         }
     </style>
 
 <body>
 
-    <h1>Pesquisa avançada</h1>
+    <nav>
+        <a href="index.html">Google</a>
+        <a href="images.html">Imagens</a>
+    </nav>
 
-    <input type="text">
-    <input type="text">
-    <input type="text">
-    <input type="text">
+    <h1 class="Alienation">Pesquisa avançada</h1>
+    <p class="Alienation">Localizar páginas com...</p>
+
+    <form action="https://www.google.com.br/search" class="Alienation">
+        <div id="Labels">
+            <label for="Input1">Todas estas palavras:</label>
+            <label for="Input2">Esta expressão ou frase exata:</label>
+            <label for="Input3">Qualquer uma dessas palavras:</label>
+            <label for="Input4">Nenhuma dessas palavras:</label>
+        </div>
+        
+        <div id="Inputs">
+            <input id="Input1" name="as_q" class="Alienation" type="text">
+            <input id="Input2" name="as_epq" class="Alienation" type="text">
+            <input id="Input3" name="as_oq" class="Alienation" type="text">
+            <input id="Input4" name="as_eq"class="Alienation" type="text">
+        </div>
+
+        <input type="submit" value="Pesquisa avançada">
+        
+    </form>    
+
+        
 </body>
 </html>
